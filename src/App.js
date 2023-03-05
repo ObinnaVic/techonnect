@@ -5,6 +5,7 @@ import TeamProfile from "./components/TeamProfile"
 import Service from './components/Service';
 import ServiceContent from './components/ServiceContent';
 import Data2 from './Datas/ServiceData';
+import Contact from './components/Contact';
 function App() {
    const Teambody = Data.map((item) => {
     return < TeamProfile
@@ -24,7 +25,8 @@ function App() {
       <Team />
       <section className='teamProfile'> {Teambody}</section>
       <Service />
-       <section className='servicemain'> {ServiceBody}</section>
+      <section className='servicemain'> {ServiceBody}</section>
+      <Contact />
 
     </div>
   );
