@@ -559,8 +559,13 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+

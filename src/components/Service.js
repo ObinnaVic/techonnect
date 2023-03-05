@@ -2,9 +2,23 @@ import React from 'react'
 
 function Service() {
   return (
-    <div>
+    <>
+      <header>
+  
+      </header>
+      <div className='service'>
+        <div className='main serviceimg'>
+
+        </div>
+           <div className='writeup'>
+            <h2>Dive into the details!</h2>
+          </div>
+      </div>
+
       
-    </div>
+
+
+    </>
   )
 }
 
