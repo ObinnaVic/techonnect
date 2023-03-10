@@ -6,4 +6,162 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+.Pcolor{
+  color: rgba(253, 239, 249, 1);
+}
+.bgcolor {
+  background: #FDEFF9;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 4px 0px;
+  padding: 2.5rem 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+
+}
+header{
+  min-height: 3rem;
+  background-color: black;
+
+}
+.main{
+  min-height: 35rem;
+  background:linear-gradient(  rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0.767)), url(../public/images/Teamwork.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 2px;
+  position: relative;
+}
+.arrow{
+  top: 50%;
+  left: 40%;
+  position:absolute;
+}
+.text{
+  position: absolute;
+  top: 15%;
+  left: 13%;
+}
+.writeup{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.writeup h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.5rem 0;
+}
+.writeup p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-bottom:2rem ;
+}
+.teamProfile{
+ display: flex;
+ flex-wrap: wrap; 
+ align-items: center;
+ width: 80%;
+ margin: 2rem auto;
+ margin-bottom: 3rem;
+}
+.profile{
+  background: linear-gradient(140.63deg, #F1E8F8 7.59%, #EFDDFD 7.6%, #D4D3DD 108.7%);
+  width: 17rem;
+  height: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    margin: 1rem 2rem;
+    padding: 2rem;
+    border-radius: 7px;
+  
+}
+.teamName{
+ font-size: 1.5rem;
+ font-weight: 700;
+ text-align: center;
+ padding: 0.3rem 0;
+}
+.path{
+text-align: center;
+font-size: 0.9rem;
+font-weight: 500;
+}
+.service{
+  background-color: #FEFAFD;
+}
+.serviceimg{
+  background: linear-gradient(rgba(0, 0, 0, 0.174), rgba(0, 0, 0, 0.009)), url(../public/images/Service.png);
+
+}
+.servicemain{
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+    margin-bottom: 3rem; */
+    background-color:#FEFAFD;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.servicebox{
+  background-color: white;
+    width: 14rem;
+      height: 16rem;
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 25%;
+      margin: 1rem 2rem;
+      text-align: center;
+      padding: 2rem;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 4px 0px;
+      border-radius: 7px;
+}
+.contactmain{
+    /* display: flex;
+  align-items: center; */
+  width: 60%;
+  margin: 0 auto;
+}
+.contactbox{
+  background: rgba(0, 17, 40, 1);
+  border-radius: 5px;
+  margin: 3rem 0;
+}
+form{
+  width: 80%;
+  margin: 0 auto;
+}
+form input, textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.7rem 1rem;
+  border-radius: 7px;
+  outline: none;
+}
+.contactBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+button {
+  background: rgba(192, 49, 80, 1);
+    padding: 0.5rem 1rem;
+    color: #FEFAFD;
+    outline: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.mailphone{
+  width: 80%;
+  margin: 0 auto;
 }
