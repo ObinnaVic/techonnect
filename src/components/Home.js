@@ -1,12 +1,10 @@
 import React from 'react'
-import Nav from "./Nav";
 import head from "../images/head.png";
 
 function Home() {
   return (
     <div>
-      <Nav />
-      <div className="hero-section relative flex flex-col justify-center p-16">
+      <div className="hero-section flex flex-col justify-center p-16">
         <div>
           <img src={head} alt="header" className='mb-7' />
           <p className="text-white">Innovations That Stands Out at its Best</p>
