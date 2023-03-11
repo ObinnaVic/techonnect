@@ -4,9 +4,6 @@ import Data2 from '../Datas/ServiceData';
 const ServiceContent = () => {
   return (
     <>
-        <header>
-    
-        </header>
         <div className='service'>
           <div className='main serviceimg'>
 

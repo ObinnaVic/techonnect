@@ -1,17 +1,24 @@
 import './App.css';
-import TeamProfile from "./components/TeamProfile"
-import ServiceContent from './components/ServiceContent';
-import Contact from './components/Contact';
+import Home from './components/Home';
+import ServiceContent from "./components/ServiceContent";
+import TeamProfile from "./components/TeamProfile";
+import Nav from "./components/Nav"
+import Error from "./components/Error"
+import { Route, Routes } from 'react-router-dom';
+
 function App() {
    
   return (
-    <div>
-      
-      <TeamProfile />
-      <ServiceContent/>
-      <Contact />
-
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Nav />}>
+          <Route index element={<Home />} />
+          <Route path="Team" element={<TeamProfile />} />
+          <Route path="Service" element={<ServiceContent />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
