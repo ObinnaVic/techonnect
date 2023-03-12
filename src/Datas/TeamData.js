@@ -1,9 +1,10 @@
 const Data = [
     {
         id: 1,
-        img: "Rita.png",
-        teamName: "Okolo Rita",
-        path: "Product Designer (UI/UX)"
+         img: "Victor.png",
+        teamName: "Nkire Victor",
+        path: "Front-End Developer"
+       
         
     },
     {
@@ -15,16 +16,18 @@ const Data = [
     },
     {
         id: 3,
-        img: "Salami.png",
-        teamName: "Salami Tokumboh",
+         img: "Abayomi.png",
+        teamName: "Abayomi Akinruli",
         path: "Product Designer (UI/UX)"
+
+      
         
     },
     {
         id: 4,
-        img: "Victor.png",
-        teamName: "Nkire Victor",
-        path: "Front-End Developer"
+        img: "Rita.png",
+        teamName: "Okolo Rita",
+        path: "Product Designer (UI/UX)"
         
     },
     {
@@ -36,53 +39,58 @@ const Data = [
     },
     {
         id: 6,
-        img: "null.png",
-        teamName: "Asogwa Ifeanyi",
-        path: "Graphic Designer "
+          img: "Salami.png",
+        teamName: "Salami Tokumboh",
+        path: "Product Designer (UI/UX)"
+       
         
     },
     {
         id: 7,
-        img: "null.png",
-        teamName: "Omeje Victor",
-        path: " Web3 Enthusiast"
+         img: "null.png",
+        teamName: "Sochima Henry",
+        path: "Back-End Developer"
+        
+        
         
     },
     {
         id: 8,
-        img: "null.png",
-        teamName: "Sochima Henry",
-        path: "Back-End Developer"
-        
+
+        img: "Precious.png",
+        teamName: "Omeje Victor",
+        path: " Web3 Enthusiast"
+       
     },
     {
         id: 9,
-        img: "Abayomi.png",
-        teamName: "Abayomi Akinruli",
-        path: "Product Designer (UI/UX)"
+         img: "Ifeanyi.png",
+        teamName: "Asogwa Ifeanyi",
+        path: "Graphic Designer "
+       
         
     },
-    {
-        id: 10,
-        img: "null.png",
-        teamName: "Sochima Henry",
-        path: "Back-End Developer"
+    // {
+    //     id: 10,
+    //     img: "null.png",
+    //     teamName: "Sochima Henry",
+    //     path: "Back-End Developer"
         
-    },
-    {
-        id: 11,
-        img: "null.png",
-        teamName: "Sochima Henry",
-        path: "Back-End Developer"
+    // },
+    // {
+    //     id: 11,
+    //     img: "null.png",
+    //     teamName: "Sochima Henry",
+    //     path: "Back-End Developer"
         
-    },
-    {
-        id: 12,
-        img: "null.png",
-        teamName: "Joy Peter",
-        path: "Content Writer"
+    // },
+    // {
+    //     id: 12,
+    //     img: "null.png",
+    //     teamName: "Joy Peter",
+    //     path: "Content Writer"
         
-    },
+    // },
      
     
 ];
