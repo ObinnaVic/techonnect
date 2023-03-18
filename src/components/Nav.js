@@ -1,12 +1,12 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from "../images/MainLogo.png";
 
 function Nav() {
   return (
     <main>
-      <div className="nav fixed bg-black flex justify-between items-center w-full px-16">
-        <img src={Logo} alt="logo" className="w-40" />
+      <div className="nav hidden fixed bg-black md:flex justify-between items-center w-full p-2 md:px-16">
+        <img src={Logo} alt="logo" className="w-20 md:w-40" />
         <div className="flex items-center">
           <ul className="flex text-white mr-8">
             <NavLink to="/">
@@ -35,12 +35,11 @@ function Nav() {
               </li>
             </NavLink>
           </ul>
-          <button className="bg-red-700 rounded-md text-white p-3">
+          <button className="bg-red-700 rounded-md text-white p-4">
             BOOK NOW
           </button>
         </div>
       </div>
-      <Outlet />
     </main>
   );
 }
