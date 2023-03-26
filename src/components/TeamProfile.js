@@ -13,7 +13,7 @@ const TeamProfile = (item) => {
             <div className='main'>
                 <div className='arrow'>
                     <img src='/images/Arrow.png' alt='arrow' />
-                    <div className='text text-white text-4xl absolute top-39% left-29%'>
+                    <div className='text'>
                     Our Team
                 </div>
             </div>

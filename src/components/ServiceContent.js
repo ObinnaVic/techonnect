@@ -16,12 +16,15 @@ const ServiceContent = () => {
           {Data2.map((props) => {
             return (
               <div className='servicebox'>
-                  <div className='text-2xl mb-5'>
+                  <div className='S-Title text-2xl mb-5'>
                       {props.title}
                   </div>  
-                  <div className='text-xs mt-12'>
+                  <div className='S-Content text-xs mt-12'>
                       {props.content}
-                  </div>  
+                </div>  
+                <div className='contactBtn'>
+              <button className='S-btn'>Learn More</button>
+            </div>
               </div>
             )
           })}
