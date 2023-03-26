@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Logo from "../images/MainLogo.png";
 
 function Footer() {
@@ -6,7 +7,9 @@ function Footer() {
     <div className="footer md:pb-3 md:px-16">
       <div className="footer-sec-one flex flex-col items-center w-4/5 md:w-1/3 mx-auto">
         <h2>Have Project in Mind</h2>
-        <button className="bg-black p-1 md:p-2">Book Now</button>
+        <NavLink to="/contact">
+          <button className="bg-black p-1 md:p-2">Book Now</button>
+        </NavLink>
       </div>
       <div className="flex flex-col md:flex-row justify-between md:w-2/3 mx-auto my-9 pl-9 md:pl-0">
         <div className="flex items-center text-white mb-10">
@@ -51,7 +54,11 @@ function Footer() {
           <p>Safe and Secure deals</p>
         </div>
       </div>
-      <img src={Logo} alt="logo" className="hidden md:block w-1/5 mx-auto mb-10" />
+      <img
+        src={Logo}
+        alt="logo"
+        className="hidden md:block w-1/5 mx-auto mb-10"
+      />
       <hr />
       <div className="grid grid-flow-row grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-cols-4 gap-3 text-white p-8">
         <div>
@@ -92,7 +99,9 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className='text-xs text-white flex justify-center'>copyright techonnect 2023.</p>
+      <p className="text-xs text-white flex justify-center">
+        copyright techonnect 2023.
+      </p>
     </div>
   );
 }

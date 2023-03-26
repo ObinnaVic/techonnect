@@ -14,30 +14,32 @@ function Nav() {
                 HOME
               </li>
             </NavLink>
-            <NavLink to="Service">
+            <NavLink to="/service">
               <li className="hover:bg-slate-400 active:text-red-700 font-bold cursor-pointer p-5">
                 OUR SERVICES
               </li>
             </NavLink>
-            <NavLink to="Team">
+            <NavLink to="/team">
               <li className="hover:bg-slate-400 active:text-red-700 font-bold cursor-pointer p-5">
                 OUR TEAM
               </li>
             </NavLink>
-            <NavLink to="Blog">
+            <NavLink to="/blog">
               <li className="hover:bg-slate-400 active:text-red-700 font-bold cursor-pointer p-5">
                 BLOG
               </li>
             </NavLink>
-            <NavLink to="Contact">
+            <NavLink to="/contact">
               <li className="hover:bg-slate-400 active:text-red-700 font-bold cursor-pointer p-5">
                 CONTACT US
               </li>
             </NavLink>
           </ul>
-          <button className="bg-red-700 rounded-md text-white p-4">
-            BOOK NOW
-          </button>
+          <NavLink to="/contact">
+            <button className="bg-red-700 rounded-md text-white p-4">
+              BOOK NOW
+            </button>
+          </NavLink>
         </div>
       </div>
     </main>
