@@ -221,7 +221,36 @@ button {
   background: #E3CDF2;
 }
 
+.about-heads {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.about-sec {
+  display: flex;
+  flex-direction: row;
+}
 
+.about-sub-head {
+  text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-contents{
+    top: 13%;
+  }
+  .nav div ul li {
+    font-size: 13px;
+  }
+  .about-sec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-sub-head {
+    text-align: center;
+  }
+}
 
 @media only screen and (max-width:800px) {
   /* mobile-navigation */
@@ -259,7 +288,7 @@ button {
     text-align: center;
   }
   .hero-contents {
-    top: 12%;
+    top: 10%;
   }
 }
 

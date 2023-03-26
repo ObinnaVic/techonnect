@@ -20,7 +20,6 @@ import iconOne from "../images/iconOne.png";
 import iconTwo from "../images/iconTwo.png";
 import iconThree from "../images/iconThree.png";
 import iconFour from "../images/iconFour.png";
-import Footer from './Footer';
 import Logo from "../images/MainLogo.png";
 
 function Home({ setMobileNav }) {
@@ -97,19 +96,19 @@ function Home({ setMobileNav }) {
         <h2 className="font-bold text-xl md:text-4xl text-center">
           WHO ARE WE
         </h2>
-        <div className="flex flex-col md:flex-row w-full mt-10">
-          <div className="w-full md:w-1/2">
+        <div className="about-sec mt-10">
+          <div className="w-full mb-10">
             <img
               src={WhoAreWe}
               alt="WhoAreWe"
               className="md:w-2/3 mx-auto md:ml-auto"
             />
           </div>
-          <div className="w-full md:w-1/2 md:px-9">
-            <h2 className="font-bold text-xl md:text-4xl text-center md:text-left mb-7">
+          <div className="w-full md:px-9">
+            <h2 className="about-sub-head font-bold text-xl md:text-4xl mb-7">
               About Techonnect Service
             </h2>
-            <div className="flex justify-between items-center text-left md:pr-8 mb-7">
+            <div className="about-heads text-left md:pr-8 mb-7">
               <h2 className="font-semibold text-xl md:text-2xl">
                 Web <br /> Projects
               </h2>
@@ -193,7 +192,7 @@ function Home({ setMobileNav }) {
         </h2>
         <hr />
         <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 grid-flow-row gap-2 md:gap-8 px-2 pt-10">
-          <div className="value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupOne}
               alt="value-icon"
@@ -205,7 +204,7 @@ function Home({ setMobileNav }) {
               the feedback to improve service and support.
             </p>
           </div>
-          <div className="value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupTwo}
               alt="value-icon"
@@ -218,7 +217,7 @@ function Home({ setMobileNav }) {
               satisfaction.
             </p>
           </div>
-          <div className="value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupThree}
               alt="value-icon"
@@ -231,7 +230,7 @@ function Home({ setMobileNav }) {
               company's operations.
             </p>
           </div>
-          <div className="value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupFour}
               alt="value-icon"
@@ -244,7 +243,7 @@ function Home({ setMobileNav }) {
               their inquiries in a timely and professional manner.
             </p>
           </div>
-          <div className="value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupFive}
               alt="value-icon"
@@ -257,7 +256,7 @@ function Home({ setMobileNav }) {
               problems in our area of specialty.
             </p>
           </div>
-          <div className="value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupSix}
               alt="value-icon"
@@ -270,7 +269,7 @@ function Home({ setMobileNav }) {
               effective solutions..
             </p>
           </div>
-          <div className="value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupSeven}
               alt="value-icon"
@@ -283,7 +282,7 @@ function Home({ setMobileNav }) {
               research.
             </p>
           </div>
-          <div className="value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupEight}
               alt="value-icon"
@@ -296,7 +295,7 @@ function Home({ setMobileNav }) {
               existing infrastructures.
             </p>
           </div>
-          <div className="hidden md:block value-items text-center md:w-2/3 mx-auto p-2 md:p-3">
+          <div className="hidden md:block value-items text-center md:w-4/5 mx-auto p-2 md:p-3">
             <img
               src={GroupNine}
               alt="value-icon"
