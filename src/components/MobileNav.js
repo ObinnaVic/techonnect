@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Logo from "../images/MainLogo.png";
 
@@ -30,16 +31,32 @@ function MobileNav({ mobileNav, setMobileNav }) {
             <div>
               <div>
                 <ul className="flex flex-col items-center">
-                  <li className="m-4">HOME</li>
-                  <li className="m-4">OUR SERVICES</li>
-                  <li className="m-4">OUR TEAM</li>
-                  <li className="m-4">BLOG</li>
-                  <li className="m-4">CONTACT US</li>
-                  <li>
+                  <NavLink to="/" onClick={CloseNav}>
+                    <li className="active:text-red-700 font-bold m-4">HOME</li>
+                  </NavLink>
+                  <NavLink to="Service" onClick={CloseNav}>
+                    <li className="active:text-red-700 font-bold m-4">
+                      OUR SERVICES
+                    </li>
+                  </NavLink>
+                  <NavLink to="Team" onClick={CloseNav}>
+                    <li className="active:text-red-700 font-bold m-4">
+                      OUR TEAM
+                    </li>
+                  </NavLink>
+                  <NavLink to="Blog" onClick={CloseNav}>
+                    <li className="active:text-red-700 font-bold m-4">BLOG</li>
+                  </NavLink>
+                  <NavLink to="Contact" onClick={CloseNav}>
+                    <li className="active:text-red-700 font-bold m-4">
+                      CONTACT US
+                    </li>
+                  </NavLink>
+                  <NavLink to="Contact" onClick={CloseNav}>
                     <button className="p-2 bg-red-600 rounded-lg m-8">
                       BOOK NOW
                     </button>
-                  </li>
+                  </NavLink>
                 </ul>
               </div>
             </div>
