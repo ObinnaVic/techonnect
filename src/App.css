@@ -8,6 +8,38 @@
   box-sizing: border-box;
   font-family: 'Playfair Display', serif;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section {
+  width: 100%;
+}
+
+
+
+.hero-Img {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.hero-contents {
+  position: absolute;
+  top: 20%;
+  z-index: -1;
+}
+
+p {
+  font-family: 'Lora', serif;
+}
+
+.who-are-we p {
+  font-size: 21px;
+}
+
 .Pcolor{
   color: rgba(253, 239, 249, 1);
 }
@@ -19,13 +51,13 @@ header{
 
 }
 .main{
-  min-height: 35rem;
-  background:linear-gradient(  rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0.767)), url(../public/images/Teamwork.png);
+  min-height: 90vh;
+  background-image:linear-gradient(  rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0.767)), url(../public/images/Teamwork.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 2px;
-  position: relative;
+  /* margin-top: 2px; */
+  /* position: relative; */
 }
 .arrow{
   top: 50%;
@@ -57,40 +89,39 @@ header{
   padding-bottom:2rem ;
 }
 .teamProfile{
- display: flex;
- flex-wrap: wrap; 
- align-items: center;
- width: 80%;
- margin: 2rem auto;
- margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+  margin-bottom: 3rem;
 }
 .profile{
   background: linear-gradient(140.63deg, #F1E8F8 7.59%, #EFDDFD 7.6%, #D4D3DD 108.7%);
   width: 17rem;
   height: 20rem;
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 auto;
-    margin: 1rem 2rem;
-    padding: 2rem;
-    border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 4px 0px;
-  
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  margin: 1rem 2rem;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 4px 0px;
 }
 /* .round img{
   height: 12.5rem;
   width: 12.5rem;
 } */
 .teamName{
- font-size: 1.5rem;
- font-weight: 700;
- text-align: center;
- padding: 0.3rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.3rem 0;
 }
 .path{
-text-align: center;
-font-size: 0.9rem;
-font-weight: 500;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 /* -------------------- Service section -------- */
 .service{
@@ -100,37 +131,36 @@ font-weight: 500;
 .serviceimg{
   background:url(../public/images/Service.png);
   background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
- 
+  background-size: cover;
+  background-position: center;
 }
 .servicemain{
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: 2rem auto;
-    margin-bottom: 3rem; */
-    background-color:#FEFAFD;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 2rem auto;
+  margin-bottom: 3rem; */
+  background-color:#FEFAFD;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
     
 }
 .servicebox{
   background-color: white;
-    width: 14rem;
-      height: 19rem;
-      display: flex;
-      flex-direction: column;
-      flex: 0 0 25%;
-      margin: 1rem 2rem;
-      text-align: center;
-      padding: 2rem;
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 4px 0px;
-      border-radius: 7px;
+  width: 14rem;
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  margin: 1rem 2rem;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 4px 0px;
+  border-radius: 7px;
 }
 .S-Title {
   font-size: 1rem;
@@ -150,8 +180,6 @@ font-weight: 500;
 }
 /* --------------- contact section ---------- */
 .contactmain{
-    /* display: flex;
-  align-items: center; */
   width: 60%;
   margin: 0 auto;
 }
@@ -179,17 +207,17 @@ form input, textarea {
 }
 button {
   background: rgba(192, 49, 80, 1);
-    padding: 0.5rem 1rem;
-    color: #FEFAFD;
-    outline: none;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  color: #FEFAFD;
+  outline: none;
+  border-radius: 4px;
 }
 
 .mailphone{
   width: 100%;
   margin: 0 auto;
 }
+
 .bgcolor {
   background: #FDEFF9;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 4px 0px;
@@ -200,6 +228,79 @@ button {
 
 }
 /* ------------ Media Query--------------- */
+
+.expertise-section {
+  background: #FDEFF9;
+}
+
+.value-section {
+  background: #001128;
+}
+.value-items {
+  background: #E3CDF2;
+  box-shadow: 2px 3px 56px rgba(0, 0, 0, 0.56);
+}
+
+.theBestIcons {
+  width: 30px;
+  height: 30px;
+}
+
+.newsletter {
+  background: #FAD8DF;
+}
+
+.newsletter-input {
+  z-index: 1;
+}
+
+.footer {
+  background: #170126;
+}
+.footer-sec-one {
+  background: #E3CDF2;
+}
+
+@media only screen and (max-width:800px) {
+  /* mobile-navigation */
+  .mobileNav {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(0.3rem);
+    transition: transform 600ms ease-out;
+    transform: translateX(-0%);
+    z-index: 9999;
+    padding: 10px;
+  }
+
+  .openNav {
+    transform: translateX(100%);
+  }
+
+  @supports (inset: 0 0 0 0) {
+    .mobileNav {
+      inset: 0 0 0 0;
+    }
+  }
+
+
+  .hero-section {
+    height: 30vh;
+  }
+
+  .who-are-we p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .hero-contents {
+    top: 12%;
+  }
+}
+
 @media screen and (max-width: 480px) {
 .main{
   min-height: 10rem;
@@ -292,8 +393,21 @@ font-style: normal;
 .mailphone h5{
   font-size: 0.8rem;
 }
+}
+
+
+@media only screen and (max-width:428px) {
+  .hero-section {
+    height: 35vh;
   }
-  @media screen and (min-width: 481px ) and (max-width: 976px){
+
+  .who-are-we p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+ @media screen and (min-width: 481px ) and (max-width: 976px){
     .arrow {
         top: 40%;
         position: absolute;
