@@ -20,9 +20,9 @@ import iconOne from "../images/iconOne.png";
 import iconTwo from "../images/iconTwo.png";
 import iconThree from "../images/iconThree.png";
 import iconFour from "../images/iconFour.png";
-import Logo from "../images/MainLogo.png";
+import { NavLink } from 'react-router-dom';
 
-function Home({ setMobileNav }) {
+function Home() {
   const [input, setInput] = useState("");
   const [submitAlert, setSubmitAlert] = useState(false);
 
@@ -35,29 +35,8 @@ function Home({ setMobileNav }) {
     }, 2000);
   };
 
-  const OpenNav = () => {
-    setMobileNav(true);
-  }
-
   return (
     <div>
-      <div className="nav fixed bg-black w-full flex items-center justify-between md:hidden">
-        <img src={Logo} alt="logo" className="w-24 m-2" loading="eager" />
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="30"
-          fill="currentColor"
-          className="bi bi-list text-white"
-          viewBox="0 0 16 16"
-          onClick={OpenNav}
-        >
-          <path
-            fillRule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-          />
-        </svg>
-      </div>
       <div className="hero-section">
         <img src={HeroImg} alt="hero" className="hero-Img relative w-full" />
         <div className="hero-contents left-10 md:left-20">
@@ -69,9 +48,11 @@ function Home({ setMobileNav }) {
               Innovations That Stands Out at its Best
             </p>
           </div>
-          <button className="bg-red-700 rounded-md text-white p-2 text-xs md:text-sm md:p-4 w-32">
-            BOOK NOW
-          </button>
+          <NavLink to="/contact">
+            <button className="bg-red-700 rounded-md text-white p-2 text-xs md:text-sm md:p-4 w-32">
+              BOOK NOW
+            </button>
+          </NavLink>
         </div>
       </div>
       <div className="flex items-center justify-between p-2 md:p-16">
@@ -164,22 +145,24 @@ function Home({ setMobileNav }) {
               With our flexible production capacity and Tech know-how, we
               produce customized solutions for your needs.
             </h4>
-            <button className="flex items-center bg-red-600 text-xs md:text-xl p-3 px-4 md:px-9">
-              <p className="mr-5">START YOUR PROJECT</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-up-right text-white"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
-                />
-              </svg>
-            </button>
+            <NavLink to="/service">
+              <button className="flex items-center bg-red-600 text-xs md:text-xl p-3 px-4 md:px-9">
+                <p className="mr-5">START YOUR PROJECT</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-up-right text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                  />
+                </svg>
+              </button>
+            </NavLink>
           </div>
           <div className="w-full md:w-1/2">
             <img src={ExpertiseImg} alt="expertise" className="mx-auto" />

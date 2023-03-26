@@ -8,6 +8,8 @@ import { Route, Routes } from 'react-router-dom';
 import MobileNav from './components/MobileNav';
 import { useState } from 'react';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
+import MobileHead from './components/MobileHead';
 
 function App() {
   const [mobileNav, setMobileNav] = useState(false);
@@ -15,20 +17,17 @@ function App() {
   return (
     <>
       <Nav />
+      <MobileNav mobileNav={mobileNav} setMobileNav={setMobileNav} />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <MobileNav mobileNav={mobileNav} setMobileNav={setMobileNav} />
-          }
-        >
-          <Route index element={<Home setMobileNav={setMobileNav} />} />
-          <Route path="Team" element={<TeamProfile />} />
-          <Route path="Service" element={<ServiceContent />} />
+        <Route path="/" element={<MobileHead setMobileNav={setMobileNav} />}>
+          <Route index element={<Home />} />
+          <Route path="/team" element={<TeamProfile />} />
+          <Route path="/service" element={<ServiceContent />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }
