@@ -13,7 +13,7 @@ function Contact() {
 
     .then(() => {
       // Display popup if email sent successfully
-      alert('Email sent successfully!');
+      alert('Email sent successfully! We`ll get back to you ASAP');
       e.target.reset();
     }, () => {
       // Display popup if email sending fails
