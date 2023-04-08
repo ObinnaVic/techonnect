@@ -1,24 +1,40 @@
 import React from 'react'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
+
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_sqgxhm7', 'template_xgj419c', form.current, 'C1ttdBEuTgkNDsmXO')
+
+    .then(() => {
+      // Display popup if email sent successfully
+      alert('Email sent successfully!');
+      e.target.reset();
+    }, () => {
+      // Display popup if email sending fails
+      alert('Failed to send email.');
+    });
+};
+
   return (
     <>
       <div>
         <div className='w-full md:w-3/5 mx-auto mb-10 md:py-40'>
           <div className='contactbox py-20'>
               <h2 className='Pcolor text-center py-2 text-3xl'> Contact Us</h2>
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <input type="text" id="fname" name="fname" placeholder='Full Name'/><br></br>
                     <input type="email" id="email" name="email" placeholder='Enter your e-mail'/><br></br>
                     <input type="tel" id="tel" name="tel" placeholder='Phone Number'/><br></br>
                     <input type="text" id="Pname" name="pname" placeholder='Project Name' /><br></br>
                     <textarea placeholder='Project information' name="message" rows="7" cols="20" ></textarea>
-
-                </form>
-            <div className='contactBtn'>
-              <button>Submit</button>
-            </div>
-            
+                <button type='submit' className='contactBtn'>Submit</button>
+                </form>  
           </div>
           <div className='text-center text-3xl'>
             For complaints

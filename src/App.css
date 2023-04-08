@@ -197,7 +197,7 @@ form input, textarea {
   border-radius: 7px;
   outline: none;
 }
-.contactBtn{
+form #contactBtn{
   display: flex;
   align-items: center;
   justify-content: center;
